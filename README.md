@@ -14,7 +14,7 @@ Plugin collection for [XSLT Editor](https://github.com/Rckov/Xslt-Editor). Built
 dotnet build -c Release
 ```
 
-Copy the output dll to `plugins/{plugin-name}/` next to the editor executable.
+Copy the output dll to `plugins/{plugin-name.dll}/` next to the editor executable.
 
 ## License
 [MIT License](LICENSE) | [Report an Issue](https://github.com/Rckov/Xslt-Editor-Plugins/issues)
