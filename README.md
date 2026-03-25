@@ -1,0 +1,21 @@
+## XSLT Editor Plugins
+
+Plugin collection for [XSLT Editor](https://github.com/Rckov/Xslt-Editor). Built with [XsltEditor.Sdk](https://github.com/Rckov/Xslt-Editor-Sdk).
+
+### Available Plugins
+
+|Plugin|Description|
+|-|-|
+|XML Formatter|Formats XML and XSL documents with indentation|
+
+### Build \& Install
+
+```
+dotnet build -c Release
+```
+
+Copy the output dll to `plugins/{plugin-name}/` next to the editor executable.
+
+## License
+Licensed under [MIT](LICENSE). [Report an Issue](https://github.com/Rckov/Xslt-Editor-Plugins/issues)
+

@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/Plugins/">
+    <Project Path="src/Formatter/Formatter.csproj" />
+  </Folder>
+</Solution>
