@@ -48,4 +48,22 @@ internal class Build : NukeBuild
 					.EnableNoRestore());
 			}
 		});
+
+	Target Publish => _ => _
+		.DependsOn(Clean)
+		.Executes(() =>
+		{
+			var pluginProjects = SourceDirectory.GlobFiles("*/*.csproj");
+
+			foreach (var project in pluginProjects)
+			{
+				var pluginName = project.Parent.Name;
+				var pluginOutput = OutputDirectory / pluginName;
+
+				DotNetPublish(s => s
+					.SetProject(project)
+					.SetConfiguration(Configuration)
+					.SetOutput(pluginOutput));
+			}
+		});
 }
