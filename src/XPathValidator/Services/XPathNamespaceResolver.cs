@@ -1,9 +1,9 @@
-using System.Xml;
+﻿using System.Xml;
 using System.Xml.Linq;
 
 namespace XPathValidator.Services;
 
-internal sealed class XPathNamespaceResolver
+public sealed class XPathNamespaceResolver
 {
 	private readonly XmlNamespaceManager _manager;
 	private readonly Dictionary<string, string> _namespaceToPrefix = [];

@@ -1,11 +1,11 @@
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 using System.Xml.XPath;
 
 using XPathValidator.Models;
 
 namespace XPathValidator.Services;
 
-internal sealed class XPathEvaluatorService
+public sealed class XPathEvaluatorService
 {
 	private readonly XDocument _document;
 	private readonly XPathNamespaceResolver _namespaceResolver;

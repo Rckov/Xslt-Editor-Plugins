@@ -3,5 +3,8 @@
     <Project Path="src/Formatter/Formatter.csproj" />
     <Project Path="src/XPathValidator/XPathValidator.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/XsltEditor.Plugins.Tests.csproj" />
+  </Folder>
   <Project Path="build/Build.csproj" />
 </Solution>
