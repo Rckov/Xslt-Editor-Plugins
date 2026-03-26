@@ -1,0 +1,38 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Run Nuke build
+        run: dotnet run --project Build/Build.csproj -- Publish
+
+      - name: Archive plugins
+        run: Compress-Archive -Path output/* -DestinationPath XsltEditor-Plugins.zip
+        shell: pwsh
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: XsltEditor-Plugins.zip
+          draft: false
+          prerelease: false
+          generate_release_notes: true
