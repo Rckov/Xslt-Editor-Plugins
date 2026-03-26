@@ -1,7 +1,7 @@
 ﻿using System.Xml;
 using System.Xml.Linq;
 
-namespace Formatter.Service;
+namespace Formatter.Services;
 
 internal class FormatterPlugin
 {
