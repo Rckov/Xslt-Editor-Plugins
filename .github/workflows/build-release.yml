@@ -26,7 +26,7 @@ jobs:
         run: dotnet run --project Build/Build.csproj -- Publish
 
       - name: Archive plugins
-        run: Compress-Archive -Path output/* -DestinationPath XsltEditor-Plugins.zip
+        run: Compress-Archive -Path out/* -DestinationPath XsltEditor-Plugins.zip
         shell: pwsh
 
       - name: Create Release
