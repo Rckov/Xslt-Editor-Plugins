@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Plugins/">
     <Project Path="src/Formatter/Formatter.csproj" />
+    <Project Path="src/XPathValidator/XPathValidator/XPathValidator.csproj" Id="9c9f848a-8edf-4698-953b-95b76a5b694f" />
   </Folder>
 </Solution>

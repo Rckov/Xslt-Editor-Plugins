@@ -1,25 +1,11 @@
 ﻿using System.Xml;
 using System.Xml.Linq;
 
-using XsltEditor.Sdk;
-using XsltEditor.Sdk.Abstractions;
+namespace Formatter.Service;
 
-namespace Formatter;
-
-public sealed class FormatterPlugin : PluginBase
+internal class FormatterPlugin
 {
-	public override string Name => "XML Formatter";
-	public override string Description => "Formats XML and XSL documents with indentation";
-
-	public override void Execute(IDocumentContext context)
-	{
-		foreach (var doc in context.Documents)
-		{
-			doc.Content = Format(doc.Content);
-		}
-	}
-
-	private static string? Format(string? content)
+	public string? Format(string? content)
 	{
 		if (string.IsNullOrWhiteSpace(content))
 		{

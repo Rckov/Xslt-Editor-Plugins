@@ -7,6 +7,7 @@ Plugin collection for [XSLT Editor](https://github.com/Rckov/Xslt-Editor). Built
 |Plugin|Description|
 |-|-|
 |XML Formatter|Formats XML and XSL documents with indentation|
+|XPath Validator|Validates XPath expressions in XML document|
 
 ### Build \& Install
 
