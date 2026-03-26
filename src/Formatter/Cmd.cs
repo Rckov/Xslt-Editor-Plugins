@@ -1,4 +1,4 @@
-﻿using Formatter.Service;
+﻿using Formatter.Services;
 
 using XsltEditor.Sdk;
 using XsltEditor.Sdk.Abstractions;
