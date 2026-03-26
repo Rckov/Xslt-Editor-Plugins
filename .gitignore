@@ -361,3 +361,14 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Nuke build output
+publish/
+out/
+.nuke/temp/
+
+# WiX extension cache
+.wix/
+
+# Nuke auto-generated schema
+.nuke/build.schema.json

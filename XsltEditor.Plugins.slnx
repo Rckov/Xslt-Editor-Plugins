@@ -1,6 +1,7 @@
 <Solution>
-  <Folder Name="/Plugins/">
+  <Folder Name="/plugins/">
     <Project Path="src/Formatter/Formatter.csproj" />
     <Project Path="src/XPathValidator/XPathValidator.csproj" />
   </Folder>
+  <Project Path="build/Build.csproj" />
 </Solution>
